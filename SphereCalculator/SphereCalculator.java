@@ -18,9 +18,10 @@ public static void main(String[] Args)
 
       /* Conversion and Output for Radius */
       double sphereVolume =((4.0 / 3.0) * Math.PI * Math.pow(sphereRadius, 3.0));
-      System.out.printf("Volume: " + "%.5f\n", sphereVolume);
+      System.out.printf("Volume: " + "%.4f\n", sphereVolume);
 
-      //System.out.printf("Surface Area: " + "\n");
+      double surfaceArea = (4 * Math.PI * Math.pow(sphereRadius, 2.0));
+      System.out.printf("Surface Area: " + "\n");
 
     }
     
