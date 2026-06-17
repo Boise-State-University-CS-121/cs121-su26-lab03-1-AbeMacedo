@@ -8,7 +8,8 @@ public class AccountGenerator
     public static void main(String[] Args) 
     
     {
-
+      
+      /* Input Scanner and Radom Num Generator */
       Scanner kyBrd = new Scanner(System.in);
       Random randGen = new Random();
 
@@ -25,12 +26,14 @@ public class AccountGenerator
        char first1CharFirstName = firstName.charAt(0);
        String first5CharLastName = lastName.substring(0,5);
 
+       /* Random Number for User */
+       int randInt = randGen.nextInt(90) + 1;
 
-       System.out.println("Username: ");
+       String userName = first1CharFirstName + first5CharLastName + randInt;
+       System.out.println("Username: " + userName);
 
-
-
-
+       /* Close Scanner */
+       kyBrd.close();
     }
     
 }
