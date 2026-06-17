@@ -10,9 +10,18 @@ public class AccountGenerator
         Scanner kyBrd = new Scanner(System.in);
         Random randGen = new Random();
 
-       System.out.println("Enter your first name: "); 
-       System.out.println("Enter your last name: "); 
+       System.out.println("Enter your first name: ");
+       String firstName = kyBrd.nextLine();
+       firstName = firstName.toLowerCase();
+       
+       System.out.println("Enter your last name: ");
+       String lastName = kyBrd.nextLine();
+       lastName = lastName.toLowerCase();
+
+
        System.out.println("Username: "); 
+
+
 
     }
     
