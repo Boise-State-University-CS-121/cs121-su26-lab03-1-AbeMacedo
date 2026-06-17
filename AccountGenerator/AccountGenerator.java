@@ -27,7 +27,7 @@ public class AccountGenerator
        String first5CharLastName = lastName.substring(0,5);
 
        /* Random Number for User */
-       int randInt = randGen.nextInt(90) + 1;
+       int randInt = randGen.nextInt(90) + 10;
 
        String userName = first1CharFirstName + first5CharLastName + randInt;
        System.out.println("Username: " + userName);
