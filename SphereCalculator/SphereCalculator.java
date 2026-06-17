@@ -9,18 +9,17 @@ public static void main(String[] Args)
       /* Scanner for Radius */
       Scanner keyBrd = new Scanner(System.in);
 
-      /* Initialized Variables */
+      /* Initialized Radius Variable */
       int sphereRadius;
-      int sphereVolume;
-      int sphereSArea;
 
       /* User input for Radius */
       System.out.print("Enter the sphere's radius: ");
-      sphereRadius = keyBrd.nextInt(); 
+      sphereRadius = keyBrd.nextInt();
 
-      sphereVolume = (4 / 3) * Math.PI * ()
+      /* Conversion and Output for Radius */
+      double sphereVolume =((4.0 / 3.0) * Math.PI * Math.pow(sphereRadius, 3.0));
+      System.out.printf("Volume: " + "%.5f\n", sphereVolume);
 
-      //System.out.printf("Volume: " + "\n");
       //System.out.printf("Surface Area: " + "\n");
 
     }
